@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: pos
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: mafhfuz
+Implementation-Vendor-Id: test.m
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/pos/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

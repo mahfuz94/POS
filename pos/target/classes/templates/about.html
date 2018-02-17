@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+</head>
+<body>
+	<div th:fragment="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="panel panel-default">
+						<div class="panel-heading changeCursor" id="customSlide"
+							data-toggle="tooltip" data-placement="top"
+							title="Click here to expand or collapse">
+							<strong>Add Supplier Info</strong>
+						</div>
+						<div class="panel-body panelHidden" id="panelHidden">
+						<form>
+							<div class="form-group">
+								<p class="col-md-4" for="name">Supplier Name:</p> 
+								<div class="col-md-8">
+									<input type="text"
+									class="form-control" id="name" placeholder="Supplier name"/>
+								</div>
+							</div>
+							&#160;
+							<div class="form-group">
+								<p class="col-md-4" for="companyName">Company Name:</p> 
+								<div class="col-md-8">
+									<input type="text"
+									class="form-control" id="companyName" placeholder="Company Name"/>
+								</div>
+							</div>
+							&#160;
+							<div class="form-group">
+								<p class="col-md-4" for="address">Address:</p> 
+								<div class="col-md-8">
+									<textarea rows="2" cols="5" class="form-control" placeholder=""></textarea>
+								</div>
+							</div>
+							&#160;
+							<div class="form-group">
+								<p class="col-md-4" for="phone">Phone:</p> 
+								<div class="col-md-8">
+									<input type="text"
+									class="form-control" id="phone" placeholder="Phone"/>
+								</div>
+							</div>
+							&#160;
+							<div class="form-group">
+								<p class="col-md-4" for="fax">Fax:</p> 
+								<div class="col-md-8">
+									<input type="text"
+									class="form-control" id="fax" placeholder="Fax"/>
+								</div>
+							</div>
+							&#160;
+							<div class="form-group">
+								<p class="col-md-4" for="mobile">Mobile:</p> 
+								<div class="col-md-8">
+									<input type="text"
+									class="form-control" id="mobile" placeholder="Mobile"/>
+								</div>
+							</div>
+							&#160;
+							<div class="form-group">
+								<p class="col-md-4" for="web">Web:</p> 
+								<div class="col-md-8">
+									<input type="text"
+									class="form-control" id="web" placeholder="Web"/>
+								</div>
+							</div>
+							&#160;
+							<div class="form-group">
+								<p class="col-md-4" for="email">Email:</p> 
+								<div class="col-md-8">
+									<input type="text"
+									class="form-control" id="email" placeholder="Email"/>
+								</div>
+							</div>
+							&#160;
+							<div class="form-group">
+								<p class="col-md-4" for="note">Notes:</p> 
+								<div class="col-md-8">
+									<textarea rows="2" cols="5" class="form-control" placeholder="Notes"></textarea>
+								</div>
+							</div>
+							&#160;
+							<div class="form-group"> 
+								<div class="col-md-offset-4 col-md-12">
+									<input type="submit" class="btn btn-primary" value="Add"/>
+									<input type="reset" class="btn btn-info" value="Reset"/>
+									<input type="submit" class="btn btn-warning" value="Close"/>
+								</div>
+							</div>
+							&#160;
+							</form>
+						</div>
+						
+					</div>
+					
+				</div>
+
+				<div class="col-md-6">
+
+					<div class="panel panel-default">
+						<div class="panel-heading changeCursor" id="customSlide2"
+							data-toggle="tooltip" data-placement="top"
+							title="Click here to expand or collapse">
+							<strong>View Suppliers Info</strong>
+						</div>
+						<div class="panel-body panelHidden" id="panelHidden2">
+							<table id="supplierInfoTable" class="table table-bordered table-responsive" style="width: 100%">
+								<thead id="autoClick">
+									<tr >
+										<th>SL. No</th>
+										<th>Supplier Name</th>
+										<th>Company Name</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

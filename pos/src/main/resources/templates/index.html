@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>POS</title>
+<link rel="stylesheet" type="text/css"
+	href="../webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+	
+<link rel="stylesheet" type="text/css" href="/css/datatables.css"/>	
+
+<!-- linking with custom css -->
+<link rel="stylesheet" type="text/css" href="../webjars/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="/css/custom.css" />
+</head>
+<body>
+	<div th:replace="fragments/header :: header" />
+	<div class="wrapper">
+	
+		<div class="content">
+			<div th:if="${userClickHome == true}">
+				<div th:replace="home :: home"></div>
+			</div>
+			
+			<div th:if="${userClickAbout == true}">
+				<div th:replace="about :: about"></div>
+			</div>
+		</div>
+		
+	
+	<span th:replace="fragments/footer :: footer"></span>
+	</div>
+	
+	
+	<script type="text/javascript"
+		src="../webjars/jquery/1.11.1/jquery.js"></script>
+	<script type="text/javascript" src="/js/datatables.js"></script>
+	<script type="text/javascript"
+		src="../webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/custom.js"></script>
+</body>
+</html>

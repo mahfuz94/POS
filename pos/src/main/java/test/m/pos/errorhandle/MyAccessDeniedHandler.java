@@ -24,16 +24,16 @@ public class MyAccessDeniedHandler implements AccessDeniedHandler{
                        HttpServletResponse httpServletResponse,
                        AccessDeniedException e) throws IOException, ServletException {
 
-    //    Authentication auth
-      //          = SecurityContextHolder.getContext().getAuthentication();
+     Authentication auth
+              = SecurityContextHolder.getContext().getAuthentication();
 
-  //      if (auth != null) {
- //           logger.info("User '" + auth.getName()
- //                   + "' attempted to access the protected URL: "
- //                   + httpServletRequest.getRequestURI());
-//        }
+      if (auth != null) {
+          logger.info("User '" + auth.getName()
+                   + "' attempted to access the protected URL: "
+                   + httpServletRequest.getRequestURI());
+      }
 
-//        httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/403");
+      httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/403");
 
     }
 }
